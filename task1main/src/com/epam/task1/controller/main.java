@@ -17,6 +17,8 @@ public class main {
             printer.print("Carrying capacity is: " + AerodromeLogic.getInstance().countTotalCarryingCapacity(aerodrome));
             printer.print("Seat capacity: " + AerodromeLogic.getInstance().countTotalSeatingCapacityIncludingCrew(aerodrome));
             printer.print(AerodromeLogic.getInstance().findPlaneWithFuelConsumption(aerodrome, 400, 700));
+            AerodromeLogic.getInstance().sortOnFlightRange(aerodrome);
+            printer.print(aerodrome.toString());
         } catch (TaskOneException e) {
             e.printStackTrace();
         }
