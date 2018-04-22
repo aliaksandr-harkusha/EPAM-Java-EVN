@@ -1,5 +1,6 @@
 package com.epam.task1.exception;
 
+//этот класс изыточен - просто наследуй свои исключения от класса Exception
 public class TaskOneException extends Exception {
     public TaskOneException() {
         super();
