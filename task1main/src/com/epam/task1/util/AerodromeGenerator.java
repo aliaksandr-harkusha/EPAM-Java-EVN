@@ -70,6 +70,8 @@ public class AerodromeGenerator {
         int crewCount = random.nextInt(MAX_CREW_COUNT) + MIN_CREW_COUNT;
         float fuelConsumption = MIN_FUEL_CONSUMPTION + random.nextFloat() * (MAX_FUEL_CONSUMPTION - MIN_FUEL_CONSUMPTION);
         int flightRange = random.nextInt(MAX_FLIGHT_RANGE) + MIN_FLIGHT_RANGE;
+        //много параметров передается в конструктор - можно запутаться с порядком их следования
+        //лучше потом вызвать set-методы чтобы просетать все параметры в объект
         return new Airliner(name.toString(), crewCount, carryingCapacity, fuelConsumption, flightRange, seatingCapacity);
     }
 
