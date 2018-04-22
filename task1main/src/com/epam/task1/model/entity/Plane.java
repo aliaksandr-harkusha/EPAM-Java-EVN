@@ -21,6 +21,8 @@ public class Plane {
         this.flightRange = flightRange;
     }
 
+    //похоже на клонирование объекта 
+    //в java за это отвечает метод clone - класса Object
     public Plane(Plane plane) {
         this.model = plane.model;
         this.crewCount = plane.crewCount;
