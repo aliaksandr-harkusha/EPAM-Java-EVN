@@ -35,11 +35,13 @@ public class Aerodrome {
         planes.remove(plane);
     }
 
-
+    //методы это обычно глаголы
+    //назови его как-нибудь getSize()
     public int size() {
         return planes.size();
     }
 
+    //вместо слова Aerodrome, здесь лучше использовать что-то типа getClass().getClassName() - что-бы при изменении имени класса - не пришлось менять toString метод
     @Override
     public String toString() {
         return "Aerodrome: " +
