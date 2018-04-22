@@ -1,3 +1,4 @@
+//папки типа idea и скомпилированные классы - не коммитаем  
 package com.epam.task1.controller;
 
 import com.epam.task1.exception.TaskOneException;
@@ -6,6 +7,7 @@ import com.epam.task1.model.logic.AerodromeLogic;
 import com.epam.task1.util.AerodromeGenerator;
 import com.epam.task1.view.Printer;
 
+//Названия классов - с большой буквы 
 public class main {
     public static void main(String[] args) {
         AerodromeGenerator generator = AerodromeGenerator.getInstance();
